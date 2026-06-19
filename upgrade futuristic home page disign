@@ -1,0 +1,47 @@
+body{
+margin:0;
+padding:0;
+background:#000;
+color:#fff;
+font-family:Arial,sans-serif;
+text-align:center;
+}
+
+header{
+padding:20px;
+font-size:22px;
+font-weight:bold;
+}
+
+nav{
+padding:20px;
+}
+
+nav p{
+margin:12px;
+font-size:18px;
+}
+
+section{
+padding:80px 20px;
+}
+
+h1{
+font-size:42px;
+}
+
+button{
+padding:15px 30px;
+font-size:18px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+background:#2563eb;
+color:white;
+}
+
+footer{
+padding:30px;
+margin-top:50px;
+font-size:14px;
+}
