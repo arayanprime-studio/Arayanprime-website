@@ -15,6 +15,14 @@ nav{
 padding:20px;
 }
 
+nav p{
+margin:10px;
+}
+
+section{
+padding:40px 20px;
+}
+
 button{
 padding:12px 24px;
 font-size:18px;
@@ -27,3 +35,4 @@ footer{
 padding:20px;
 margin-top:40px;
 }
+
