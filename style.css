@@ -126,8 +126,7 @@ box-shadow:0 0 35px #7c3aed;
 transform:scale(1.08);
   }
 .hero{
-
- background-image: url("assets/images/baground pag.png");
+ bacbackground-image: url("assets/images/baground pag.png");
  background-size: cover;
  background-position: center;
  background-repeat: no-repeat;
