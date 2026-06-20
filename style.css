@@ -126,13 +126,13 @@ box-shadow:0 0 35px #7c3aed;
 transform:scale(1.08);
   }
 .hero{
-backbackground:
-linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)),
-url("assets/images/background.jpg");
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-min-height:100vh;
+
+    background-image: url("assets/images/baground pag.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
   }
 .logo{
 display:flex;
