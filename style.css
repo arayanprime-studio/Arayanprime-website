@@ -126,7 +126,9 @@ box-shadow:0 0 35px #7c3aed;
 transform:scale(1.08);
   }
 .hero{
-background:linear-gradient(135deg,#050816,#0b1120,#111827);
+backbackground:
+linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)),
+url("assets/images/background.jpg");
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
