@@ -35,6 +35,12 @@ box-shadow:0 0 20px #2563eb;
 .logo h2{
 font-size:34px;
 font-weight:bold;
+color:#ffffff;
+text-shadow:
+0 0 8px #00bfff,
+0 0 15px #00bfff,
+0 0 30px #2563eb,
+0 0 50px #2563eb;
 }
 
 .header-icons{
