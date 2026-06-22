@@ -35,3 +35,14 @@ footer{
 padding:20px;
 margin-top:40px;
 }
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+width:55px;
+height:55px;
+border-radius:12px;
+}
