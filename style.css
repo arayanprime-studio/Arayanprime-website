@@ -1,71 +1,87 @@
-body{
+/* ===========================
+   ARAYAN PRIME Website V1.0
+   Part 1 - Foundation
+=========================== */
+
+*{
 margin:0;
 padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
 background:#000;
 color:#fff;
-font-family:Arial,sans-serif;
-text-align:center;
+overflow-x:hidden;
+background-image:url("assets/images/home-bg.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
 }
+
+/* Header */
 
 header{
-padding:20px;
-font-size:22px;
-font-weight:bold;
-}
-
-nav{
-padding:20px;
-}
-
-nav p{
-margin:12px;
-font-size:18px;
-}
-
-section{
-padding:80px 20px;
-}
-
-h1{
-font-size:42px;
-}
-
-button{
-padding:15px 30px;
-font-size:18px;
-border:none;
-border-radius:30px;
-cursor:pointer;
-background:#2563eb;
-color:white;
-}
-
-footer{
-padding:30px;
-margin-top:50px;
-font-size:14px;
-}
-header{
+position:sticky;
+top:0;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px;
+padding:18px 20px;
+background:rgba(0,0,0,.75);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(37,99,235,.5);
+z-index:1000;
 }
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+width:55px;
+height:55px;
+border-radius:14px;
+}
+
+.logo h2{
+font-size:24px;
+font-weight:700;
+letter-spacing:1px;
+}
+
+/* Navigation */
 
 nav{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:12px;
+gap:10px;
+padding:18px;
+background:rgba(0,0,0,.45);
 }
 
-button:hover{
-transform:scale(1.05);
+nav p{
+padding:10px 16px;
+border-radius:30px;
+transition:.3s;
+cursor:pointer;
 }
 
-h2{
-font-size:28px;
+nav p:hover{
+background:#2563eb;
 }
+
+/* Hero */
+
 .hero{
 min-height:80vh;
 display:flex;
@@ -76,172 +92,70 @@ padding:40px 20px;
 }
 
 .hero-content{
-max-width:700px;
+max-width:760px;
 }
 
 .hero h1{
-font-size:48px;
+font-size:52px;
 margin-bottom:20px;
+text-shadow:0 0 25px #2563eb;
 }
 
 .hero p{
 font-size:20px;
-margin-bottom:20px;
+line-height:1.7;
+margin-bottom:28px;
 }
 
+/* Button */
+
 .hero button{
-padding:15px 35px;
+padding:18px 42px;
 font-size:18px;
-border-radius:40px;
-background:#2563eb;
-color:white;
-}
-
-.coming-soon{
-margin-top:25px;
-font-size:16px;
-letter-spacing:3px;
-  }
-header{
-position:sticky;
-top:0;
-background:rgba(0,0,0,0.85);
-backdrop-filter:blur(10px);
-border-bottom:1px solid #2563eb;
-z-index:1000;
-}
-
-.hero h1{
-color:#ffffff;
-text-shadow:0 0 15px #2563eb,0 0 30px #7c3aed;
-}
-
-.hero button{
-box-shadow:0 0 20px #2563eb;
-transition:0.3s;
+font-weight:bold;
+border:none;
+border-radius:50px;
+cursor:pointer;
+background:linear-gradient(90deg,#2563eb,#7c3aed);
+color:#fff;
+transition:.35s;
+box-shadow:
+0 0 20px #2563eb,
+0 0 40px #7c3aed;
 }
 
 .hero button:hover{
-box-shadow:0 0 35px #7c3aed;
-transform:scale(1.08);
-  }
-.hero{
-    background-image: url("./assets/images/baground pag.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
-.logo{
-display:flex;
-align-items:center;
-gap:12px;
-}
-
-.logo img{
-width:55px;
-height:55px;
-border-radius:12px;
-  }
-.portal-screen{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:#000;
-display:none;
-justify-content:center;
-align-items:center;
-z-index:9999;
-}
-
-.portal-screen h1{
-color:#fff;
-font-size:32px;
-text-shadow:0 0 20px #2563eb,0 0 40px #7c3aed;
-animation:portalGlow 1s infinite alternate;
-}
-
-@keyframes portalGlow{
-from{
-opacity:0.5;
-transform:scale(1);
-}
-to{
-opacity:1;
-transform:scale(1.08);
-}
-  }
-.portal-ring{
-width:180px;
-height:180px;
-border:8px solid #4f7cff;
-border-radius:50%;
+transform:scale(1.06);
 box-shadow:
-0 0 20px #4f7cff,
-0 0 40px #7c3aed,
-0 0 80px #2563eb;
-animation:portalSpin 2s linear infinite,
-portalPulse 1.5s ease-in-out infinite;
+0 0 30px #2563eb,
+0 0 60px #7c3aed;
 }
 
-@keyframes portalSpin{
-from{
-transform:rotate(0deg);
-}
-to{
-transform:rotate(360deg);
-}
+.coming-soon{
+margin-top:28px;
+letter-spacing:4px;
+font-size:16px;
+opacity:.9;
 }
 
-@keyframes portalPulse{
-0%{
-transform:scale(0.9);
-opacity:0.7;
-}
-50%{
-transform:scale(1);
-opacity:1;
-}
-100%{
-transform:scale(0.9);
-opacity:0.7;
-}
-  }
-.portal-ring{
-width:180px;
-height:180px;
-border:8px solid #4f7cff;
-border-radius:50%;
-box-shadow:
-0 0 20px #4f7cff,
-0 0 40px #7c3aed,
-0 0 80px #2563eb;
-animation:portalSpin 2s linear infinite,
-portalPulse 1.5s ease-in-out infinite;
+/* Footer */
+
+footer{
+padding:35px 20px;
+text-align:center;
+background:rgba(0,0,0,.75);
+border-top:1px solid rgba(255,255,255,.1);
 }
 
-@keyframes portalSpin{
-from{
-transform:rotate(0deg);
-}
-to{
-transform:rotate(360deg);
-}
+footer p{
+margin:8px 0;
+font-size:15px;
 }
 
-@keyframes portalPulse{
-0%{
-transform:scale(0.9);
-opacity:0.7;
-}
-50%{
-transform:scale(1);
-opacity:1;
-}
-100%{
-transform:scale(0.9);
-opacity:0.7;
-}
+/* HR */
+
+hr{
+border:none;
+height:1px;
+background:rgba(255,255,255,.08);
 }
