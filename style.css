@@ -1,16 +1,15 @@
-/* =========================
-   ARAYAN PRIME Website V1.0
-   Stable Version
-========================= */
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
-font-family:Arial,sans-serif;
+font-family:Arial,Helvetica,sans-serif;
 background:#000;
 color:#fff;
 background-image:url("assets/images/home-bg.jpg");
@@ -18,57 +17,63 @@ background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
 background-attachment:fixed;
-text-align:center;
 overflow-x:hidden;
+text-align:center;
 }
 
 header{
+position:sticky;
+top:0;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px;
-background:rgba(0,0,0,.8);
-backdrop-filter:blur(10px);
+padding:18px 20px;
+background:rgba(0,0,0,.75);
+backdrop-filter:blur(12px);
 border-bottom:1px solid #2563eb;
-position:sticky;
-top:0;
 z-index:1000;
 }
 
 .logo{
 display:flex;
 align-items:center;
-gap:10px;
+gap:12px;
 }
 
 .logo img{
 width:55px;
 height:55px;
 border-radius:12px;
+object-fit:cover;
 }
 
 .logo h2{
-font-size:28px;
-color:#fff;
+font-size:26px;
+font-weight:bold;
+letter-spacing:1px;
 }
 
 nav{
 display:flex;
 justify-content:center;
+align-items:center;
 flex-wrap:wrap;
 gap:12px;
 padding:18px;
+background:rgba(0,0,0,.25);
+backdrop-filter:blur(8px);
 }
 
 nav p{
 padding:10px 18px;
-cursor:pointer;
 border-radius:30px;
+cursor:pointer;
 transition:.3s;
 }
 
 nav p:hover{
 background:#2563eb;
+box-shadow:0 0 15px #2563eb;
 }
 
 .hero{
@@ -91,8 +96,8 @@ text-shadow:0 0 20px #2563eb;
 
 .hero p{
 font-size:20px;
-margin-bottom:25px;
 line-height:1.6;
+margin-bottom:25px;
 }
 
 .hero button{
@@ -102,269 +107,19 @@ font-weight:bold;
 border:none;
 border-radius:40px;
 cursor:pointer;
-background:#2563eb;
 color:#fff;
+background:#2563eb;
 transition:.3s;
 }
 
 .hero button:hover{
 transform:scale(1.05);
 background:#3b82f6;
-box-shadow:0 0 20px #2563eb;
+box-shadow:0 0 25px #2563eb;
 }
 
 .coming-soon{
 margin-top:25px;
 font-size:16px;
 letter-spacing:3px;
-}
-
-footer{
-padding:30px;
-margin-top:50px;
-font-size:14px;
-background:rgba(0,0,0,.75);
-}
-
-hr{
-border:none;
-height:1px;
-background:rgba(255,255,255,.1);
-}
-/* ===========================
-   ARAYAN PRIME V1.0
-   Part 2 - Premium UI
-=========================== */
-
-/* Smooth Animations */
-
-*{
-transition:0.3s ease;
-}
-
-/* Hero Title */
-
-.hero h1{
-font-size:52px;
-font-weight:700;
-letter-spacing:1px;
-text-shadow:
-0 0 15px #2563eb,
-0 0 30px #2563eb;
-}
-
-/* Hero Paragraph */
-
-.hero p{
-opacity:.95;
-}
-
-/* ENTER THE FUTURE Button */
-
-.hero button{
-
-background:linear-gradient(90deg,#2563eb,#3b82f6);
-
-box-shadow:
-0 0 15px #2563eb,
-0 0 30px #2563eb;
-
-}
-
-.hero button:hover{
-
-transform:translateY(-4px) scale(1.05);
-
-box-shadow:
-0 0 25px #2563eb,
-0 0 50px #3b82f6;
-
-}
-
-/* Navigation */
-
-nav p{
-
-border:1px solid transparent;
-
-}
-
-nav p:hover{
-
-border:1px solid #3b82f6;
-
-box-shadow:0 0 15px #2563eb;
-
-}
-
-/* Footer */
-
-footer{
-
-border-top:1px solid rgba(255,255,255,.15);
-
-}
-
-/* Mobile */
-
-@media(max-width:768px){
-
-.logo h2{
-
-font-size:22px;
-
-}
-
-.hero h1{
-
-font-size:38px;
-
-}
-
-.hero p{
-
-font-size:18px;
-
-}
-
-.hero button{
-
-width:100%;
-
-max-width:320px;
-
-}
-
-nav{
-
-gap:8px;
-
-}
-
-nav p{
-
-font-size:14px;
-
-padding:8px 12px;
-
-}
-
-}
-/* ===========================
-   ARAYAN PRIME V1.0
-   Part 3 - Final Polish
-=========================== */
-
-/* Background Overlay */
-
-body::before{
-content:"";
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:linear-gradient(
-180deg,
-rgba(0,0,0,.35),
-rgba(0,0,0,.70)
-);
-pointer-events:none;
-z-index:-1;
-}
-
-/* Hero Fade */
-
-.hero-content{
-animation:heroFade 1.2s ease;
-}
-
-@keyframes heroFade{
-
-from{
-
-opacity:0;
-transform:translateY(40px);
-
-}
-
-to{
-
-opacity:1;
-transform:translateY(0);
-
-}
-
-}
-
-/* Logo */
-
-.logo img{
-
-box-shadow:
-0 0 15px #2563eb;
-
-}
-
-/* Header */
-
-header{
-
-box-shadow:
-0 0 15px rgba(37,99,235,.25);
-
-}
-
-/* Navigation */
-
-nav{
-
-background:rgba(0,0,0,.25);
-
-backdrop-filter:blur(6px);
-
-}
-
-/* Hero */
-
-.hero{
-
-position:relative;
-
-}
-
-/* Coming Soon */
-
-.coming-soon{
-
-opacity:.8;
-animation:blink 2s infinite;
-
-}
-
-@keyframes blink{
-
-0%{opacity:.4;}
-
-50%{opacity:1;}
-
-100%{opacity:.4;}
-
-}
-
-/* Footer */
-
-footer p{
-
-opacity:.85;
-
-}
-
-/* Selection */
-
-::selection{
-
-background:#2563eb;
-color:#fff;
-
 }
