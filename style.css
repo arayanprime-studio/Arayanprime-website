@@ -1,84 +1,123 @@
-body{
-background:#050816;
-color:white;
-font-family:Arial,sans-serif;
+*{
 margin:0;
 padding:0;
-text-align:center;
+box-sizing:border-box;
 }
 
-header{
+body{
+background:#030712;
+color:white;
+font-family:Arial,sans-serif;
+}
+
+.header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 20px;
-background:#0b1120;
+padding:18px 25px;
+background:rgba(0,0,0,.8);
+border-bottom:2px solid #2563eb;
 }
 
 .logo{
 display:flex;
 align-items:center;
-gap:12px;
+gap:15px;
 }
 
 .logo img{
-width:55px;
-height:55px;
+width:65px;
+height:65px;
 border-radius:12px;
+box-shadow:0 0 20px #2563eb;
 }
 
 .logo h2{
-margin:0;
-font-size:24px;
+font-size:34px;
+font-weight:bold;
 }
 
-nav{
-padding:20px;
-}
-
-nav p{
-margin:10px;
-}
-
-.hero{
-min-height:70vh;
+.header-icons{
 display:flex;
-justify-content:center;
-align-items:center;
-padding:40px 20px;
-}
-
-.hero-content{
-max-width:700px;
-}
-
-.hero h1{
-font-size:48px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:20px;
-margin-bottom:20px;
-}
-
-button{
-padding:12px 24px;
-font-size:18px;
-border:none;
-border-radius:30px;
-background:#2563eb;
-color:white;
+gap:18px;
+font-size:28px;
 cursor:pointer;
 }
 
-.coming-soon{
-margin-top:25px;
-letter-spacing:3px;
+.navbar{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:18px;
+padding:18px;
+background:#081225;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+
+.navbar a:hover{
+color:#3b82f6;
+}
+
+.hero{
+min-height:80vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+background:radial-gradient(circle,#0b1d45,#030712);
+}
+
+.hero-content{
+max-width:800px;
+}
+
+.hero h1{
+font-size:58px;
+text-shadow:0 0 25px #2563eb;
+margin-bottom:25px;
+}
+
+.hero p{
+font-size:24px;
+margin-bottom:30px;
+}
+
+button{
+padding:18px 45px;
+border:none;
+border-radius:40px;
+background:#2563eb;
+color:white;
+font-size:22px;
+cursor:pointer;
+box-shadow:0 0 30px #2563eb;
+}
+
+button:hover{
+transform:scale(1.05);
+transition:.3s;
+}
+
+.coming{
+margin-top:35px;
+letter-spacing:6px;
+font-size:22px;
 }
 
 footer{
-padding:20px;
-margin-top:40px;
-background:#0b1120;
+text-align:center;
+padding:40px;
+background:#050b18;
+border-top:2px solid #2563eb;
+}
+
+footer p{
+margin:12px;
+font-size:18px;
 }
