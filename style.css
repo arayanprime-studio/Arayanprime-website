@@ -45,10 +45,3 @@ padding:30px;
 margin-top:50px;
 font-size:14px;
 }
-.hero{
-background:linear-gradient(135deg,#050816,#0b1120,#111827);
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-min-height:100vh;
-}
