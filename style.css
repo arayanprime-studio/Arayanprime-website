@@ -143,3 +143,17 @@ width:55px;
 height:55px;
 border-radius:12px;
   }
+body{
+    background:
+    radial-gradient(circle at top,#102a70,#050b22 45%,#000 100%);
+    animation:bgMove 8s ease-in-out infinite alternate;
+}
+
+@keyframes bgMove{
+    from{
+        background-position:top;
+    }
+    to{
+        background-position:bottom;
+    }
+  }
