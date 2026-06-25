@@ -132,3 +132,14 @@ background-position:center;
 background-repeat:no-repeat;
 min-height:100vh;
   }
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+width:55px;
+height:55px;
+border-radius:12px;
+  }
