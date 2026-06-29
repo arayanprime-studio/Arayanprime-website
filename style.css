@@ -127,12 +127,13 @@ transform:scale(1.08);
 }
 
 .hero{
-    background-image: url("./assets/images/hero-bg.png");
+    background-image: url("./assets/images/baground pag.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
 }
+
 .logo{
 display:flex;
 align-items:center;
@@ -157,4 +158,4 @@ body{
     to{
         background-position:bottom;
     }
-  }
+  
