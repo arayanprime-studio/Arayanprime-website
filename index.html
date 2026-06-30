@@ -98,24 +98,31 @@
 <button>🛡️ Privacy & Terms (Coming Soon)</button>
 <button>ℹ️ Website Info (Coming Soon)</button>
 
-</div> 
-<script>
-document.getElementById("enterFuture").addEventListener("click", function () {
+</dody>
+  <script>
+const enterBtn = document.getElementById("enterFuture");
+
+enterBtn.addEventListener("click", function(){
+
+document.getElementById("portalMusic").play();
 
 document.querySelector(".hero").classList.add("fade");
 
 setTimeout(function(){
 
-document.querySelector(".hero").style.display="none";
+document.querySelector("header").style.display="none";
 document.querySelector("nav").style.display="none";
+document.querySelector(".hero").style.display="none";
 document.querySelector("footer").style.display="none";
 
 document.getElementById("futureHub").style.display="block";
 
-},2000);
+document.getElementById("welcomeVoice").play();
+
+},3000);
 
 });
-</script>
+  </script>
    <audio id="portalMusic">
     <source src="assets/audio/portal.mp3" type="audio/mpeg">
 </audio>
