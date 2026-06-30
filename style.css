@@ -158,4 +158,40 @@ body{
     to{
         background-position:bottom;
     }
-  
+  #futureHub{
+display:none;
+min-height:100vh;
+background:url("assets/images/future-hub.png");
+background-size:cover;
+background-position:center;
+padding:40px 20px;
+text-align:center;
+}
+
+#futureHub h1{
+font-size:42px;
+color:white;
+text-shadow:0 0 15px #2563eb;
+margin-bottom:30px;
+}
+
+#futureHub button{
+display:block;
+width:90%;
+max-width:420px;
+margin:15px auto;
+padding:18px;
+font-size:20px;
+border:none;
+border-radius:50px;
+background:rgba(37,99,235,0.25);
+backdrop-filter:blur(12px);
+color:white;
+box-shadow:0 0 15px #2563eb;
+transition:.3s;
+}
+
+#futureHub button:hover{
+transform:scale(1.05);
+box-shadow:0 0 30px #7c3aed;
+}
