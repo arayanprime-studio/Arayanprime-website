@@ -101,12 +101,19 @@
 </div> 
 <script>
 document.getElementById("enterFuture").addEventListener("click", function () {
-    document.querySelector(".hero").style.display = "none";
-document.querySelector("nav").style.display = "none";
-document.querySelector("footer").style.display = "none";
-document.querySelector("hr").style.display = "none";
 
-document.getElementById("futureHub").style.display = "block";
+document.querySelector(".hero").classList.add("fade");
+
+setTimeout(function(){
+
+document.querySelector(".hero").style.display="none";
+document.querySelector("nav").style.display="none";
+document.querySelector("footer").style.display="none";
+
+document.getElementById("futureHub").style.display="block";
+
+},2000);
+
 });
 </script>
 </body>
