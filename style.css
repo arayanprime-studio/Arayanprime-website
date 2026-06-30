@@ -195,3 +195,15 @@ transition:.3s;
 transform:scale(1.05);
 box-shadow:0 0 30px #7c3aed;
 }
+.hidden{
+display:none;
+}
+
+.fade{
+animation:fade 2s forwards;
+}
+
+@keyframes fade{
+0%{opacity:1;}
+100%{opacity:0;}
+}
