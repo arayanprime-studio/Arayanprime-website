@@ -101,7 +101,12 @@
 </div> 
 <script>
 document.getElementById("enterFuture").addEventListener("click", function () {
-    alert("🚀 ENTER THE FUTURE\n\nPortal Animation Coming Soon...");
+    document.querySelector(".hero").style.display = "none";
+document.querySelector("nav").style.display = "none";
+document.querySelector("footer").style.display = "none";
+document.querySelector("hr").style.display = "none";
+
+document.getElementById("futureHub").style.display = "block";
 });
 </script>
 </body>
